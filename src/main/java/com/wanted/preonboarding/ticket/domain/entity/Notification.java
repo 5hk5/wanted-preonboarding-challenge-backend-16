@@ -19,7 +19,7 @@ public class Notification extends BaseEntity {
     @Column(nullable = false)
     private int id;
 
-    @Column(nullable = false)
-    private int reservationId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Reservation reservation;
 
 }

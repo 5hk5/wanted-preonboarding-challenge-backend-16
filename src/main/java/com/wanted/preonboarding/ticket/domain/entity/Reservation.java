@@ -50,6 +50,9 @@ public class Reservation extends BaseEntity {
     @Column(nullable = false)
     private String isCancelled;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    private PerformanceSeatInfo performanceSeatInfo;
+
     public static Reservation of(ReserveInfo info) {
         return Reservation.builder()
             .performanceId(info.getPerformanceId())

@@ -1,9 +1,10 @@
 package com.wanted.preonboarding.ticket.domain.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table
@@ -35,5 +36,8 @@ public class PerformanceSeatInfo extends BaseEntity {
 
     @Column(nullable = false)
     private String isReserved;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Performance performance;
 
 }
