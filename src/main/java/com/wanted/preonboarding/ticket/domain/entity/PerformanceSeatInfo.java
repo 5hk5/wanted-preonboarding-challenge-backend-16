@@ -34,7 +34,7 @@ public class PerformanceSeatInfo extends BaseEntity {
     @Column(nullable = false)
     private int seat;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "is_reserved", columnDefinition = "tinyint(1) default 0")
     private String isReserved;
 
     @ManyToOne(fetch = FetchType.LAZY)

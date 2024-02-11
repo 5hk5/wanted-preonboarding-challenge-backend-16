@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.sql.Date;
@@ -16,6 +18,7 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@DynamicInsert
 public class Performance extends BaseEntity {
     @Id
     @GeneratedValue(generator = "uuid2")
@@ -35,10 +38,10 @@ public class Performance extends BaseEntity {
     @Column(nullable = false)
     private int type;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "start_date")
     private Date startDate;
 
-    @Column(nullable = false, name = "is_soldout", columnDefinition = "varchar default 'disable'")
-    private String isSoldout;
+    @Column(nullable = false, name = "is_soldout", columnDefinition = "tinyint(1) default 0")
+    private boolean isSoldout;
 
 }

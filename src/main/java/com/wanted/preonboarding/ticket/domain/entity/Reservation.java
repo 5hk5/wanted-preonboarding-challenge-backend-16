@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.sql.Date;
@@ -19,6 +20,7 @@ import java.util.UUID;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@DynamicInsert
 public class Reservation extends BaseEntity {
 
     @Id
@@ -47,7 +49,7 @@ public class Reservation extends BaseEntity {
     @Column(nullable = false)
     private int seat;
 
-    @Column(nullable = false)
+    @Column(nullable = false, name = "is_cancelled", columnDefinition = "tinyint(1) default 0")
     private String isCancelled;
 
     @ManyToOne(fetch = FetchType.LAZY)

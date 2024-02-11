@@ -36,15 +36,14 @@ public class TicketSeller {
         log.info("reserveInfo ID => {}", reserveInfo.getPerformanceId());
         Performance info = performanceRepository.findById(reserveInfo.getPerformanceId())
             .orElseThrow(EntityNotFoundException::new);
-        String enableReserve = info.getIsReserve();
-        if (enableReserve.equalsIgnoreCase("enable")) {
+
+        if (!info.isSoldout()) {
             // 1. 결제
-            int price = info.getPrice();
-            reserveInfo.setAmount(reserveInfo.getAmount() - price);
+            reserveInfo.setAmount(reserveInfo.getAmount() - info.getPrice());
+
             // 2. 예매 진행
             reservationRepository.save(Reservation.of(reserveInfo));
             return true;
-
         } else {
             return false;
         }
