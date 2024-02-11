@@ -5,6 +5,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+@Entity
+@Table
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class PerformanceSeatInfo extends BaseEntity {
 
     @Id
