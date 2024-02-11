@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5824ca55-ea5f-4195-9b55-4be1991a24b6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5824ca55-ea5f-4195-9b55-4be1991a24b6" name="Changes" comment="feat : 초기 설정">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/ticket/domain/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/ticket/domain/entity/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/BackendPreonboardingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/BackendPreonboardingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/ticket/domain/dto/ReserveInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/ticket/domain/dto/ReserveInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/ticket/domain/entity/Performance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/ticket/domain/entity/Performance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/ticket/domain/entity/PerformanceSeatInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/ticket/domain/entity/PerformanceSeatInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/ticket/domain/entity/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wanted/preonboarding/ticket/domain/entity/Reservation.java" afterDir="false" />
     </list>
     <list id="5bf0e265-24b1-4f7e-bb7e-0d35541acb6d" name="ignore" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +29,13 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -31,6 +47,20 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="6" end1="8" start2="6" end2="14" changelist="5824ca55-ea5f-4195-9b55-4be1991a24b6" />
+        <range start1="10" end1="10" start2="16" end2="18" changelist="5824ca55-ea5f-4195-9b55-4be1991a24b6" />
+        <range start1="21" end1="21" start2="29" end2="36" changelist="5824ca55-ea5f-4195-9b55-4be1991a24b6" />
+        <range start1="33" end1="33" start2="48" end2="62" changelist="5824ca55-ea5f-4195-9b55-4be1991a24b6" />
+        <range start1="40" end1="40" start2="69" end2="72" changelist="5824ca55-ea5f-4195-9b55-4be1991a24b6" />
+        <range start1="116" end1="117" start2="148" end2="157" changelist="5824ca55-ea5f-4195-9b55-4be1991a24b6" />
+        <range start1="118" end1="118" start2="158" end2="159" changelist="5bf0e265-24b1-4f7e-bb7e-0d35541acb6d" />
+        <range start1="122" end1="122" start2="163" end2="167" changelist="5bf0e265-24b1-4f7e-bb7e-0d35541acb6d" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -38,6 +68,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2c51SXflRL2GmyZmh205KBDh6F3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -114,7 +147,15 @@
       <option name="presentableId" value="Default" />
       <updated>1707386628227</updated>
       <workItem from="1707386632513" duration="5459000" />
-      <workItem from="1707464397993" duration="1040000" />
+      <workItem from="1707464397993" duration="7931000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat : 초기 설정">
+      <option name="closed" value="true" />
+      <created>1707626320201</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707626320201</updated>
     </task>
     <servers />
   </component>

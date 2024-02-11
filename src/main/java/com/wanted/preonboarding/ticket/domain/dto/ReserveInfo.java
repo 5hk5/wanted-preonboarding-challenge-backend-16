@@ -20,4 +20,5 @@ public class ReserveInfo {
     private int round;
     private char line;
     private int seat;
+    private String isCancelled;
 }
